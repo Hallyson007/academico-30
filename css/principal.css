@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(fonte/Roboto-Regular.ttf);
+}
+
+/* comum a todas as páginas */
+
+body {
+    font-family: 'RobotoRegular';
+}
+
+p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+/* Trabalhando a página inicial */
+
+#inicio h1 {
+    font-size: 2.8em; 
+    color: blue;
+    font-weight: bold;
+}
+
+
+
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 800px;
+    height: fit-content;
+    line-height: 48px;
+}
