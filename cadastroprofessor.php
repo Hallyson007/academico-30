@@ -11,7 +11,7 @@
     <p>Preencher os dados do aluno(a)</p>
 
     <fieldset>
-        <legend>Cadastro de Aluno (a)</legend>
+        <legend>Cadastro de Professor (a)</legend>
         <form action="cadastro_aluno.php" method="post">
             <p>
                 <label for="aluno">Nome</label>
