@@ -8,20 +8,21 @@ $cep = $_POST['cep'];
 $bairro = $_POST['bairro'];
 $cidade = $_POST['cidade'];
 $estado = $_POST['estado'];
-$formacao = $_POST['fomacao'];
-$titulacao = $_POST['titulacao'];
+$telefone = $_POST['telefone'];
+$formacao = $_POST['formacao'];
+$titulacao = $_POST["titulacao"]; 
 
-require ('script/conexao.php');
+require('script/conexao.php');
 
-$sql = "INSERT INTO professor (cpf, nome, endereco, complemento, cep, bairro, cidade, estado, telefone,formacao,titulacao) VALUES ('$cpf', '$nome', '$endereco', '$complemento', '$cep', '$bairro', '$cidade', '$estado', '$telefone','$formacao' , '$titulacao') ";
+$sql = "INSERT INTO professor (cpf, nome, endereco, complemento, cep, bairro, cidade, estado, telefone, formacao,titulacao) VALUES ('$cpf', '$nome', '$endereco', '$complemento', '$cep', '$bairro', '$cidade', '$estado', '$telefone','$formacao','$titulacao') ";
 
-if (mysqli_query($conexao, $sql)) {
+if (mysqli_query($conexao,$sql)) {
     echo "Registro inserido com sucesso";
 } else {
-    echo "Erro ao inserir o registro: " . mysqli_error($conexao);
+   echo "Erro ao inserir o registro: ". mysqli_error($conexao);
 }
 mysqli_close($conexao);
 header("location:cadastroprofessor.php")
 
 
-    ?>
+?>
